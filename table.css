@@ -1,0 +1,31 @@
+tr, td {
+    border: 1px solid #ddd;
+  }
+  h3 {
+    color: brown;
+  }
+  /* ... (Your other CSS rules) ... */
+
+table {
+    width: 70%; /* Or your desired width */
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Target the *second* td in each row */
+td:nth-child(2) {
+    color: brown;
+}

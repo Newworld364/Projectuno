@@ -1,0 +1,569 @@
+/* CSS Variables (from previous response, ensure these are at the top of your CSS) */
+:root {
+    --primary-blue: #5b56ac; /* Example blue, adjust as needed */
+    --light-blue-bg: #081b20; /* Light background color */
+    --dark-text: #070606;
+    --medium-text: #555;
+    --light-text: #698a71;
+    --white: #fff;
+    --border-color: #ddd;
+    --button-primary-bg: #28a745; /* Green for primary buttons */
+    --button-secondary-bg: #6c757d; /* Gray for secondary buttons */
+    --card-bg: #f8f9fa; /* Light grey for card backgrounds */
+
+    /* Fonts */
+    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Playfair Display', serif; /* A more decorative font for headings */
+}
+
+/* Base Styles (from previous response) */
+body {
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--dark-text);
+    background-color: var(--light-blue-bg); /* Overall page background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+h1, h2 {
+    font-family: var(--font-heading);
+    color: var(--dark-text);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em; /* Larger for hero section */
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below images */
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-size: 1em;
+}
+
+.primary-btn {
+    background-color: var(--button-primary-bg);
+    color: var(--white);
+}
+
+.primary-btn:hover {
+    filter: brightness(90%); /* Simple darkening effect */
+}
+
+.secondary-btn {
+    background-color: var(--button-secondary-bg);
+    color: var(--white);
+}
+
+.secondary-btn:hover {
+    filter: brightness(90%);
+}
+
+/* Icons for lists */
+.icon {
+    margin-right: 10px;
+    color: var(--button-primary-bg); /* Checkmark color */
+    font-weight: bold;
+}
+
+/* Header */
+.site-header {
+    background-color: var(--white);
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.site-header .logo {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: var(--primary-blue);
+    margin: 0;
+}
+
+/* Hero Section (from previous response) */
+.hero-section {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.hero-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    color: var(--dark-text);
+    font-size: 3.5em; /* Larger for hero */
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: var(--medium-text);
+}
+
+.hero-members {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    color: var(--light-text);
+    font-size: 0.9em;
+}
+
+.hero-members img {
+    border-radius: 50%; /* If avatars are circular */
+    width: 80px; /* Adjust size */
+    height: 40px; /* Adjust size */
+    object-fit: cover;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Read Together Section - UPDATED STYLING */
+.read-together-section {
+    padding: 60px 0;
+}
+
+.read-together-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-direction: row-reverse; /* NEW: Puts the image on the left side */
+}
+
+.read-together-image {
+    flex: 1;
+    text-align: center;
+}
+
+.read-together-image img {
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.read-together-text {
+    flex: 1;
+}
+
+.read-together-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.read-together-text ul li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: var(--medium-text);
+}
+
+/* Not Your Average Section - EXISTING STYLING (IMAGE ON RIGHT) */
+.not-average-section {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.not-average-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-direction: row; /* Default, image will be on the right */
+}
+
+.not-average-text {
+    flex: 1;
+}
+
+.not-average-image {
+    flex: 1;
+    text-align: center;
+}
+
+.not-average-image img {
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    color: var(--dark-text);
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--primary-blue);
+}
+
+/* Journey Section (from previous response) */
+.journey-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--light-blue-bg);
+    position: relative;
+}
+
+.journey-section h2 {
+    color: var(--dark-text);
+    margin-bottom: 60px;
+}
+
+.journey-steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.journey-steps::before {
+    content: '';
+    position: absolute;
+    top: calc(50% + 20px);
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--border-color);
+    z-index: 0;
+    transform: translateY(-50%);
+}
+
+.step {
+    flex: 1;
+    min-width: 180px;
+    max-width: 250px;
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    position: relative;
+    padding-top: 60px;
+    z-index: 2;
+}
+
+.step-number {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Membership Section (from previous response) */
+.membership-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.membership-section h2 {
+    margin-bottom: 40px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-card h3 {
+    font-size: 1.8em;
+    color: var(--dark-text);
+    margin-bottom: 15px;
+}
+
+.pricing-card .price {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.pricing-card .price span {
+    font-size: 0.5em;
+    font-weight: 400;
+    color: var(--medium-text);
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: left;
+    width: 100%;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+    color: var(--medium-text);
+}
+
+.pricing-card .btn {
+    width: 80%;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Testimonial Section (from previous response) */
+.testimonial-section {
+    padding: 60px 0;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.testimonial-quote {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.4em;
+    font-style: italic;
+    color: var(--dark-text);
+    line-height: 1.8;
+}
+
+.testimonial-quote .author {
+    margin-top: 20px;
+    font-size: 1em;
+    font-style: normal;
+    color: var(--medium-text);
+}
+
+/* Call to Action Section (from previous response) */
+.cta-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.cta-section h2 {
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+.cta-section .btn {
+    background-color: var(--button-primary-bg);
+    color: var(--white);
+}
+
+.cta-members {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    color: var(--white);
+    font-size: 0.9em;
+}
+
+.cta-members img {
+    border-radius: 50%;
+    width: 80px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Footer (from previous response) */
+.site-footer {
+    background-color: var(--dark-text);
+    color: var(--light-text);
+    padding: 20px 0;
+    font-size: 0.9em;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: var(--light-text);
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--white);
+}
+
+/* --- Responsive Design (from previous response, with minor adjustments) --- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    /* Stack sections vertically on mobile */
+    .hero-content,
+    .read-together-content, /* Apply to this one too */
+    .not-average-content { /* And this one */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Ensure images are at the top of their section on mobile */
+    .hero-image,
+    .read-together-image,
+    .not-average-image {
+        order: -1; /* Puts the image first in the column */
+        margin-bottom: 30px;
+    }
+
+    .hero-members,
+    .cta-members {
+        justify-content: center;
+    }
+
+    .journey-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 90%;
+        max-width: 400px;
+        padding-top: 25px;
+    }
+
+    .step-number {
+        top: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    .journey-steps::before {
+        display: none; /* Hide line on mobile */
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .hero-section,
+    .read-together-section,
+    .not-average-section,
+    .journey-section,
+    .membership-section,
+    .testimonial-section,
+    .cta-section {
+        padding: 40px 0;
+    }
+}
