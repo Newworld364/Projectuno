@@ -1,162 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Recipe page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  <link rel="stylesheet" href="table.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Book Club</title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-<!--Image-->
-<div>
-  
-  <style>
-    .center-image {
-      display: block; /* Make it a block-level element */
-      margin-left: auto;
-      margin-right: auto;
-    }
-  </style>
-  
-  <img src="image-omelette.jpeg" alt="omelette" class="center-image"    width="700" height="300">
-</div>
-<style>
-  h1 {
-    font-family: 'Young Serif', serif;
-    font-weight: 400;
-    font-size: 4.5em;
-      }
-</style>
-</head>
-<body>
-  <style>
-    h1 {
-       background-color: antiquewhite;
-    }
-    h1 {
-       text-align: center;
-       color: goldenrod;
-    }
-  </style>
-  <h1>Simple Omelette Recipe</h1>
+    <header class="site-header">
+        <div class="container">
+            <p class="logo">Tech book club</p>
+        </div>
+    </header>
 
+    <main>
+        <section class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Join the ultimate tech book club</h1>
+                    <p>Connect with a community of fellow tech enthusiasts. Get curated recommendations, join vibrant discussions, and attend exclusive meetups – all in one place.</p>
+                    <button class="btn primary-btn">Review Membership Options &darr;</button>
+                    <div class="hero-members">
+                      
+                        <p>280+ members joined already</p>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="book 1.jpg" alt="Group of people discussing books">
+                </div>
+            </div>
+        </section>
 
-  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
-<div>
+        <section class="journey-section">
+            <div class="container">
+                <h2>Your tech reading journey</h2>
+                <div class="journey-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <p>Choose your membership tier</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <p>Get your monthly book selection</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <p>Join our discussion forums</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <p>Attend exclusive meetups</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
- <h3>Preparation time</h3> 
- <ul>
-  <li>Total: Approximately 10 minutes</li>
-  <li>Preparation: 5 minutes</li>
-  <li>Cooking: 5 minutes</li>
-</ul>
-  
-</div>
-  
-<div>
-  
-  <h3>Ingredients</h3>
- <ul>
- <li> 2-3 large eggs</li>
-  <li>Salt, to taste</li>
-  <li>Pepper, to taste</li>
-  <li>1 tablespoon of butter or oil</li>
-  <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
- </ul>
-  
+        <section class="read-together-section">
+            <div class="container read-together-content">
+                <div class="read-together-image">
+                    <img src="book 2.jpg" alt="People reading books together">
+                </div>
+                <div class="read-together-text">
+                    <h2>Read together, grow together</h2>
+                    <ul>
+                        <li><span class="icon">&#10003;</span> Monthly curated tech reads selected by experts</li>
+                        <li><span class="icon">&#10003;</span> Virtual and in-person meetups for deep-dive discussions</li>
+                        <li><span class="icon">&#10003;</span> Early access to new tech book releases</li>
+                        <li><span class="icon">&#10003;</span> Live Q&A sessions with tech thought leaders</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-</div>
+        <section class="not-average-section">
+            <div class="container not-average-content">
+                <div class="not-average-text">
+                    <h2>Not your average book club</h2>
+                    <p>Connect with a community that speaks your language - literally! Our discussions blend technical depth with practical applications, ensuring every session is insightful and engaging.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 16h-2v-6h2v6zm4 0h-2v-6h2v6zm4 0h-2v-6h2v6z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 16h-2v-6h2v6zm4 0h-2v-6h2v6zm4 0h-2v-6h2v6z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 16h-2v-6h2v6zm4 0h-2v-6h2v6zm4 0h-2v-6h2v6z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="not-average-image">
+                    <img src="book 2.jpg" alt="People discussing in a casual setting">
+                </div>
+            </div>
+        </section>
 
-  <div>
-<h3>Instructions</h3>
+        <section class="membership-section">
+            <div class="container">
+                <h2>Membership options</h2>
+                <div class="pricing-cards">
+                    <div class="pricing-card starter">
+                        <h3>Starter</h3>
+                        <p class="price">$19 <span>/month</span></p>
+                        <ul>
+                            <li><span class="icon">&#10003;</span> 1 book/month</li>
+                            <li><span class="icon">&#10003;</span> Forum access</li>
+                        </ul>
+                        <button class="btn secondary-btn">Subscribe Now</button>
+                    </div>
+                    <div class="pricing-card pro">
+                        <h3>Pro</h3>
+                        <p class="price">$29 <span>/month</span></p>
+                        <ul>
+                            <li><span class="icon">&#10003;</span> 2 books/month</li>
+                            <li><span class="icon">&#10003;</span> Forum access</li>
+                            <li><span class="icon">&#10003;</span> Exclusive content</li>
+                        </ul>
+                        <button class="btn secondary-btn">Subscribe Now</button>
+                    </div>
+                    <div class="pricing-card enterprise">
+                        <h3>Enterprise</h3>
+                        <p class="price">Custom</p>
+                        <ul>
+                            <li><span class="icon">&#10003;</span> Team access</li>
+                            <li><span class="icon">&#10003;</span> Custom solutions</li>
+                        </ul>
+                        <button class="btn primary-btn">Talk to Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <ol>1.Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-    You can add a tablespoon of water or milk for a fluffier texture.</ol>
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="testimonial-quote">
+                    <p>"This book club transformed my technical reading from a solitary activity into an enriching community experience. The discussions are gold!"</p>
+                    <p class="author">- Sarah Chen, Software Architect</p>
+                </div>
+            </div>
+        </section>
 
-  <ol>2.Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</ol>
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to debug your reading list?</h2>
+                <button class="btn primary-btn">Review Membership Options &uarr;</button>
+                <div class="cta-members">
+                    <img src="book  3.jpg" alt="Member avatars">
+                    <p>280+ developers joined already</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <ol>3.Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-    the eggs evenly coat the surface.</ol>
-
-  <ol>4.Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-    middle, sprinkle your chosen fillings over one half of the omelette.</ol>
-  
-  <ol>5.Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-    fillings. Let it cook for another minute, then slide it onto a plate.</ol>
-
-  <ol>6.Enjoy: Serve hot, with additional salt and pepper if needed.</ol>
-  </ol>
-
-  </div>
-
-  <div>
-    <h3>Nutrition</h3>
-
-  The table below shows nutritional values per serving without the additional fillings.
-
-  </div>
-  <style> /* ... (Your other CSS rules) ... */
-
-    div > table { /* Target table directly inside a div */
-        width: 70%; /* Or max-width: 500px; */
-        border-collapse: collapse;
-        margin-top: 10px;
-        margin-left: auto; /* Center the table horizontally */
-        margin-right: auto;
-    }
-    
-    table, th, td {
-        border: 1px solid #ddd;
-        padding: 8px 12px;
-        text-align: left;
-    }
-    
-    th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-    }</style>
-  <div>
-    <table>
-    <tbody>
-      <style>tr, td {
-        border: 1px solid #ddd;
-      }</style>
-      <tr>
-        <td>Calories</td>
-        <td>277kcal</td>
-      </tr>
-      <tr>
-        <td>Carbs</td>
-        <td>0g</td>
-      </tr>
-      <tr>
-        <td>Protein</td>
-        <td>20g</td>
-      </tr>
-      <tr>
-        <td>Fat</td>
-        <td>22g</td>
-      </tr>
-    </tbody>
-  </table> 
-</div>
-  
-  
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Newworld Ogaga</a>.
-  </div>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2024 - Tech Book Club</p>
+            <div class="footer-social">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 16h-2v-6h2v6zm4 0h-2v-6h2v6zm4 0h-2v-6h2v6z"/></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 16h-2v-6h2v6zm4 0h-2v-6h2v6zm4 0h-2v-6h2v6z"/></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 16h-2v-6h2v6zm4 0h-2v-6h2v6zm4 0h-2v-6h2v6z"/></svg></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
